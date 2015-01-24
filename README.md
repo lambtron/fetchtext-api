@@ -5,21 +5,31 @@ FetchText API
 
 ### Request
 
-A simple `GET` request to the endpoint with querystring `query`, as per example below:
+A simple `GET` request to the endpoint with querystring `URL`, as per example below:
 ```bash
-
+curl http://fetchtext-api.herokuapp.com/fetch/?url=http://www.polygon.com/2014/6/26/5842180/shovel-knight-review-pc-3ds-wii-u
 ```
 
 ### Response
 
-An array of the results with `title`, `blurb`, and `link`:
+You get an object response:
 ```javascript
-
+{
+    "title":"Shovel Knight review",
+    "favicon":"https://cdn1.vox-cdn.com/community_logos/42931/favicon.ico",
+    "description":"Shovel Knight is inspired by the past in all the right ways — but it's far from stuck in it.",
+    "lang":"en",
+    "canonicalLink":"http://www.polygon.com/2014/6/26/5842180/shovel-knight-review-pc-3ds-wii-u",
+    "tags":[],
+    "image":"https://cdn1.vox-cdn.com/thumbor/WZp9mXYh34UoVjXCZWqd9MQ_LOA=/1x0:1914x1076/1280x720/cdn0.vox-cdn.com/uploads/chorus_image/image/34817507/jellyfish_hero.0.png",
+    "videos":[],
+    "text":"Shovel Knight is inspired by the past in all the right ways — but it's far from ..."
+}
 ```
 
 ### Try it
 
-
+Click [here](http://fetchtext-api.herokuapp.com/fetch/?url=http://www.polygon.com/2014/6/26/5842180/shovel-knight-review-pc-3ds-wii-u).
 
 ## License (MIT)
 
